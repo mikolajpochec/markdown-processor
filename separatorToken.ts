@@ -14,6 +14,6 @@ export class SeparatorToken extends BlockToken {
 	}
 	
 	renderHTML(): string {
-		return `<div class="article-separator"/>`;
+		return `<hr/>`;
 	}
 }
