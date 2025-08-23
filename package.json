@@ -1,0 +1,25 @@
+{
+  "name": "markdown-processor",
+  "version": "1.0.0",
+  "description": "A Markdown to HTML processor",
+  "keywords": [
+    "markdown",
+    "html",
+    "processor"
+  ],
+  "homepage": "https://github.com/mikolajpochec/markdown-processor#readme",
+  "bugs": {
+    "url": "https://github.com/mikolajpochec/markdown-processor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikolajpochec/markdown-processor.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Mikołaj Pocheć",
+  "type": "module",
+  "main": "parser.ts",
+  "scripts": {
+	  "build-web": "esbuild parser.ts  --format=iife --minify-whitespace --minify-syntax --bundle --target=chrome58,firefox57,safari11,edge16 --outfile=bundle.js"
+  }
+}

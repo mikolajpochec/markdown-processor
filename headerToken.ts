@@ -13,8 +13,11 @@ export class HeaderToken extends BlockToken {
 	}
 
 	static fromLine(line: string): BlockToken {
-		const [,hashes,content] = line.match(/^(#{1,6})\s+(.*)$/);
-		return new HeaderToken(content, hashes.length);
+		//const [,hashes,content] = line.match(/^(#{1,6})\s+(.*)$/);
+		const out = line.match(/^(#{1,6})\s+(.*)$/);
+		if(out != null) 
+			return new HeaderToken(out[2], out[1].length);
+		return new HeaderToken("Error", 1);
 	}
 	
 	renderHTML(): string {
