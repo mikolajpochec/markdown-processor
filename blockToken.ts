@@ -23,6 +23,7 @@ export abstract class BlockToken {
 	}
 	renderHTML(): string {
 		this.content = InlineRenderer.render(this.content);
+		return "";
 	}
 
 	get rawContent(): string { 

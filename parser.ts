@@ -3,13 +3,14 @@ import { HeaderToken } from './headerToken.ts'
 import { ParagraphToken } from './paragraphToken.ts'
 import { QuoteToken } from './quoteToken.ts'
 import { SeparatorToken } from './separatorToken.ts'
+import { ListToken } from './listToken.ts'
 
 export class MarkdownParser {
-	private types;
+	private types: any;
 	private markdown: string;
 
 	constructor(markdown: string) {
-		this.types = [HeaderToken, QuoteToken, SeparatorToken, ParagraphToken];
+		this.types = [HeaderToken, QuoteToken, SeparatorToken, ListToken, ParagraphToken];
 		this.markdown = markdown;
 	}
 
