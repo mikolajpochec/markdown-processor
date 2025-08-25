@@ -15,6 +15,6 @@ let output = parser.parse();
 
 ## Roadmap
 
-- **Local updates** --- when Markdown code is updated, render only viable parts of output HTML code.
-- **Standard implementation** --- full standard Markdown toolset.
+- **Local updates** - when Markdown code is updated, render only viable parts of output HTML code.
+- **Standard implementation** - full standard Markdown toolset.
 - **New optional components** from outside of the standard.
